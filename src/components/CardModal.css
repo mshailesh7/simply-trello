@@ -1,0 +1,101 @@
+/* Modal Backdrop */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Modal Container */
+  .modal {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  /* Modal Title */
+  .modal h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* Input Fields */
+  .modal input,
+  .modal textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #dfe1e6;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .modal input:focus,
+  .modal textarea:focus {
+    outline: none;
+    border-color: #0079bf;
+    box-shadow: 0 0 5px rgba(0, 121, 191, 0.5);
+  }
+  
+  /* Date Input */
+  .modal input[type="date"] {
+    padding: 0.6rem;
+    color: #555;
+  }
+  
+  /* Buttons */
+  .modal button {
+    cursor: pointer;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .modal button:first-child {
+    background-color: #61bd4f;
+    color: white;
+  }
+  
+  .modal button:first-child:hover {
+    background-color: #519839;
+  }
+  
+  .modal button:last-child {
+    background-color: #eb5a46;
+    color: white;
+  }
+  
+  .modal button:last-child:hover {
+    background-color: #c53030;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

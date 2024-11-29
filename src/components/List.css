@@ -1,0 +1,36 @@
+.list {
+    background-color: #fefefe;
+    border-radius: 8px;
+    padding: 1rem;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .list:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .list input {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #0079bf;
+  }
+  
+  .list button {
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+    background-color: #61bd4f;
+    color: white;
+  }
+  
+  .list button:hover {
+    background-color: #519839;
+  }
+  

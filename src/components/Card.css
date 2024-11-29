@@ -1,0 +1,38 @@
+.card {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.8rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card p {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card button {
+    background-color: #eb5a46;
+    font-size: 0.7rem;
+    border-radius: 4px;
+    padding: 0.3rem 0.6rem;
+    color: white;
+  }
+  
+  .card button:hover {
+    background-color: #c53030;
+    transform: translateY(-2px);
+  }
+  
+  
